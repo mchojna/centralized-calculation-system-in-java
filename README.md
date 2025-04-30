@@ -57,31 +57,31 @@ This project implements a centralized calculation system that supports both TCP 
 
 3. **Client Interaction**:
 
-- UDP: Send a "CCS DISCOVER" message to the server to receive a "CCS FOUND" response.
+- UDP: Send a "`CCS DISCOVER`" message to the server to receive a "`CCS FOUND`" response.
 - TCP: Send arithmetic operation requests in the format:
 
     ```bash
     <OPERATION> <NUMBER1> <NUMBER2>
     ```
 
-- Supported operations: ADD, SUB, MUL, DIV.
+- Supported operations: `ADD`, `SUB`, `MUL`, `DIV`.
 
 ### Example Usage
 
 UDP Discovery
 
-1. Client sends: CCS DISCOVER
-2. Server responds: CCS FOUND
+1. Client sends: `CCS DISCOVER`
+2. Server responds: `CCS FOUND`
 
 TCP Arithmetic Operations
 
-1. Client sends: ADD 5 3
-2. Server responds: 8
+1. Client sends: `ADD 5 3`
+2. Server responds: `8`
 
 Invalid Operation
 
-1. Client sends: INVALID 5 3
-2. Server responds: ERROR
+1. Client sends: `INVALID 5 3`
+2. Server responds: `ERROR`
 
 ### Statistics
 
